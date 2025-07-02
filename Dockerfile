@@ -1,5 +1,5 @@
 # Sử dụng image Java từ Docker Hub
-FROM openjdk:17-jdk-slim
+FROM openjdk:24-jdk-slim
 
 # Cài đặt thư mục làm việc trong container
 WORKDIR /app
@@ -11,5 +11,5 @@ COPY target/*.jar app.jar
 EXPOSE 8080
 
 # Lệnh để chạy ứng dụng Java
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "smoking-cessation-platform-0.0.1-SNAPSHOT.jar"]
 
