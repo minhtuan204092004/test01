@@ -5,7 +5,7 @@ FROM openjdk:24-jdk-slim
 WORKDIR /app
 
 # Sao chép file JAR từ thư mục target vào container
-COPY target/*.jar app.jar
+COPY target/smoking-cessation-platform-0.0.1-SNAPSHOT.jar app.jar
 
 # Mở port 8080 để ứng dụng có thể truy cập
 EXPOSE 8080
